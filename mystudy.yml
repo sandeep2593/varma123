@@ -4,7 +4,7 @@
   tasks:
   - name: i want to install webserver on ubuntu nodes
     apt:
-      name: "{{ubn}}"
+      name: "{{ubuntu}}"
       state: present
     when: ansible_os_family=="Debian"
 
