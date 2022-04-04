@@ -1,4 +1,6 @@
 ---
  ubn: apache
  red: httpd
+ javaredhat: java-1.8.0-opejdk
+ java_ubuntu: openjdk-8-jre
  
