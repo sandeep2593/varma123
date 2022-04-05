@@ -4,7 +4,6 @@
   tasks:
   - name: i want to install webserver on ubuntu nodes
     apt:
-      name: apache2
+      name: "{{red}}"
       state: present
-    ignore_error: yes
     when: ansible_os_family =="Debian"
