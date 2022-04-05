@@ -1,0 +1,17 @@
+ - name: i want to install httpd
+    yum:
+     name: "{{red}}"
+     state: present
+    when: ansible_os_family=="RedHat" 
+
+  - name: i want to install java in RedHat
+    yum:
+     name: "{{javaredhat}}"     
+     state: present
+    when: ansible_os_family=="RedHat"
+
+  - name: i want to install java in ubuntu
+    apt:
+      name: "{{java_ubuntu}}"
+      state: present
+    when: ansible_os_family=="Debian"
