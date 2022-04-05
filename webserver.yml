@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: i want to install webserver on ubuntu nodes
-    apt:
+    yum:
       name: "{{red}}"
       state: present
     when: ansible_os_family =="RedHat"
