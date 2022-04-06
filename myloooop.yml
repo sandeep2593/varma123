@@ -2,16 +2,24 @@
 - hosts: 172.31.31.198
   become: yes
   vars:
-     myvar1: apache2,git,tree,wget
+     myvar1: apache2
+     myvar2: git
+     myvar3: tree
+     myvar4: wget
     
   tasks:
   - name: i want to display myvar1
     debug:
        msg: "{{ myvar1}}"
+       msg: "{{myvar2}}"
+       msg: "{{myvar3}}"
   - name: i want to install git
     apt:
       name: "{{item}}"
       state: absent
     loop:
       - "{{myvar1}}"
+      - "{{myvar2}}"
+      - "{{myvar3}}
+      - "{{myvar4}}"
        
