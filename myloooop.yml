@@ -11,8 +11,9 @@
   - name: i want to display myvar1
     debug:
        msg: "{{ myvar1}}"
-       msg: "{{myvar2}}"
-       msg: "{{myvar3}}"
+       msg: "{{ myvar2}}"
+       msg: "{{ myvar3}}"
+       msg: "{{ myvar4}}"
   - name: i want to install git
     apt:
       name: "{{item}}"
@@ -20,6 +21,6 @@
     loop:
       - "{{myvar1}}"
       - "{{myvar2}}"
-      - "{{myvar3}}
+      - "{{myvar3}}"
       - "{{myvar4}}"
        
