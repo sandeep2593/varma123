@@ -3,8 +3,8 @@
   become: yes
   tasks:
   - name: i want to install webserver on ubuntu
-    apt: 
-      name: "{{maha}}"
+    yum: 
+      name: "{{javaredhat}}"
       state: present
     when: ansible_os_family=="Debian"
 
