@@ -2,9 +2,8 @@
 - hosts: 172.31.31.198,172.31.18.164
   become: yes
   vars:
-     myvar1: git
-     myvar2: tree
-     myvar3: wget
+     myvar1: git,tree,wget
+    
   tasks:
   - name: i want to display myvar1
     debug:
@@ -16,5 +15,4 @@
     loop:
   
        - "{{myvar1}}"
-       - "{{myvar2}}"
-       - "{{ myvar3}}"
+       
