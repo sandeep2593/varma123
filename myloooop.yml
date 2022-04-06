@@ -2,7 +2,7 @@
 - hosts: 172.31.31.198
   become: yes
   vars:
-     myvar1: git,tree,wget,apache2
+     myvar1: apache2,git,tree,wget
     
   tasks:
   - name: i want to display myvar1
