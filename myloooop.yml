@@ -1,0 +1,19 @@
+---
+- hosts: 172.31.31.198 
+  become: yes
+  vars:
+     myvar1: git
+     myvar2: tree
+     myvar3: wget
+  tasks:
+  - name: i want to display myvar1
+    debug:
+       msg: "{{ my var1}}"
+  - name: i want to install git
+    apt:
+      name: "{{item}}"
+      state: present
+    loop:
+       - "{{myvar1}}"
+       - "{{myvar2}}"
+       - "{{ myvar3}}"
