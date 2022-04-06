@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.31.198,172.31.18.164
+- hosts: 172.31.31.198
   become: yes
   vars:
      myvar1: git,tree,wget
@@ -13,6 +13,5 @@
       name: "{{item}}"
       state: present
     loop:
-  
-       - "{{myvar1}}"
+      - "{{myvar1}}"
        
