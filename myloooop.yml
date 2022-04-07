@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.31.198
+- hosts: 172.31.81.25
   become: yes
   vars:
      myvar1: apache2
@@ -15,6 +15,7 @@
        msg: "{{ myvar3}}"
        msg: "{{ myvar4}}"
   - name: i want to install git
+
     apt:
       name: "{{item}}"
       state: absent
