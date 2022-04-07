@@ -8,5 +8,6 @@
   - name: i want to display my first tasks
     debug:
       msg: "{{ myresult}}"
+    when: myresult.stderr==" "
   
 
