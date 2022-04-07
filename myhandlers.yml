@@ -4,9 +4,9 @@
   tasks:
   - name: i want to execute linux command
     command: host name -f
-    register: my result
+    register: myresult
   - name: i want to display my first tasks
     debug:
-      msg: "{{ my Result}}"
+      msg: "{{ myresult}}"
   
 
