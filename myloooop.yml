@@ -19,7 +19,6 @@
       name: "{{item}}"
       state: absent
     loop:
-      - "{{myvar1}}"
       - "{{myvar2}}"
       - "{{myvar3}}"
       - "{{myvar4}}"
