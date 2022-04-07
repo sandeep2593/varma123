@@ -1,0 +1,14 @@
+---
+- hosts: 172.31.81.25
+  become: yes
+  tasks:
+  - name: install git
+    apt:
+      state: present
+    tags: mygit
+  - name: install tree
+    apt:
+      name: tree
+      state: present
+    tags: tree
+     
