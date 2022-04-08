@@ -1,0 +1,6 @@
+---
+
+sandeep: apache2              
+varma: httpd
+java: java-1.8.0-openjdk
+java_opt: openjdk-8-jre
