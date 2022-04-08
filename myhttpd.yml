@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name:i want to install httpd
+  yum:
+    name: "{{varma}}"
+    state: present
+  when: ansible_os_family=="RedHat"
+  
