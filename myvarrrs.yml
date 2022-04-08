@@ -6,4 +6,4 @@
     apt:
      name: "{{sandeep}}"
      state: present
-    when: ansible_os_family "Dibean"
+    when: ansible_os_family== "Dibean"
