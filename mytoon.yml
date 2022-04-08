@@ -8,6 +8,5 @@
       state: present
   - name: i want to copy file in to ansible node
     template:
-         src: myindex.j2
+         src: template/jinza.j2
          dest: /var/www/html/index.html
-         
